@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400&family=Secular+One&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"> <!-- For Glyphicons -->
+  <link rel="stylesheet" href="style_LS.css">
+  <title>Login Page</title>
+</head>
+<body>
+  <div class="container">
+    <img class="cake-background" src="cakebg.jpg" alt="Cake Background">
+    <div class="login-box">
+      <div class="logo">
+        <img src="logo.png" alt="Logo">
+      </div>
+      <h2>LOGIN</h2>
+      <form>
+        <label for="emailInput">EMAIL</label>
+        <input id="emailInput" type="email" placeholder="Enter your email" required>
+        <label for="passwordInput">PASSWORD</label>
+        <div class="password-container">
+          <input id="passwordInput" type="password" placeholder="Enter your password" required>
+          <span id="togglePassword" class="eye-icon glyphicon glyphicon-eye-open"></span>
+        </div>
+        <div class="extra-options">
+          <label for="rememberMe" class="remember-me">
+            <input id="rememberMe" type="checkbox"> Remember me
+          </label>
+          <a href="forgotpassword.html" class="forgot-password">Forgot Password?</a>
+        </div>
+        <button id="loginBtn" type="submit">Log In</button>
+      </form>
+      <p>Don’t have an account? <a href="signup.html">Sign Up</a></p>
+      <div class="or-divider">
+        <span>OR</span>
+      </div>
+      <div class="social-login">
+        <a class="social-btn" href="#">
+          <img src="gmail.jpg" alt="Gmail Login" class="social-icon">
+        </a>
+        <a class="social-btn" href="#">
+          <img src="facebook.png" alt="Facebook Login" class="social-icon">
+        </a>
+      </div>
+    </div>
+  </div>
+  <script src="scripts_LS.js"></script>
+</body>
+</html>

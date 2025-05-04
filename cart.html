@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Colleen's Cakes & Pastries</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Playfair+Display+SC:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet"> 
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="main-bg">
+  <!-- Header -->
+  <header class="header">
+    <div class="header-left">
+      <img src="logo.png" alt="Logo" class="logo">
+      <h1 class="title">Colleen's</h1>
+    </div>
+    <div class="header-right">
+      <i class="bi bi-search"></i>
+      <div class="cart-icon">
+        <i class="bi bi-cart"></i> <!-- Cart Icon -->
+        <span class="cart-badge hidden">0</span>
+      </div>
+      <i class="bi bi-person"></i> <!-- User/Profile Icon -->
+      <i class="bi bi-house"></i> <!-- Home Icon -->
+    </div>
+  </header>
+
+  <!-- Shop section -->
+  <section class="shop-section">
+    <h3 class="section-title">Shop</h3>
+    <hr class="section-divider" />
+    <div class="products">
+      <!-- Product Card: Strawberry Pie -->
+      <div class="product-card" draggable="true" data-name="Strawberry Pie" data-price="470.00" data-image="spie.jpeg">
+        <img src="spie.jpeg" alt="Strawberry Pie" class="product-img">
+        <div class="product-info">
+          <h5 class="product-name">STRAWBERRY PIE</h5>
+          <p class="product-desc">Buttery pie crust w/ chunky strawberry compote filling</p>
+          <p class="product-price">₱ 470.00</p>
+        </div>
+      </div>
+  
+      <!-- Product Card: Cheesecake -->
+      <div class="product-card" draggable="true" data-name="Cheesecake" data-price="1780.00" data-image="ccake.jpg">
+        <img src="ccake.jpg" alt="Cheesecake" class="product-img">
+        <div class="product-info">
+          <h5 class="product-name">CHEESECAKE</h5>
+          <p class="product-desc">Dense, cheesy, and creamy cheesecake w/ assorted fruit and nut toppings</p>
+          <p class="product-price">₱ 1,780.00</p>
+        </div>
+      </div>
+  
+      <!-- Product Card: Mangoberry -->
+      <div class="product-card" draggable="true" data-name="Mangoberry" data-price="1250.00" data-image="mberry.jpg">
+        <img src="mberry.jpg" alt="Mangoberry" class="product-img">
+        <div class="product-info">
+          <h5 class="product-name">MANGOBERRY</h5>
+          <p class="product-desc">Fluffy chiffon cake, filled and topped with strawberries and mangoes,
+            covered in whipped cream and roasted almonds</p>
+          <p class="product-price">₱ 1,250.00</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <hr class="section-divider" />
+
+  <!-- Shopping Cart Section -->
+  <section class="cart-section">
+    <h3 class="section-title">
+      Shopping Cart
+      <button class="add-cart-btn">+</button>
+    </h3>
+
+    <!-- Popup Modal -->
+    <div class="popup-modal hidden" id="popupModal">
+      <div class="popup-content">
+        <button class="close-popup-btn" id="closePopup">&times;</button>
+        <div class="popup-products">
+          <div class="popup-product-card" data-name="Chocoberry" data-price="1390.00" data-image="cberry.jpg">
+            <img src="cberry.jpg" alt="Chocoberry">
+            <h5>Chocoberry</h5>
+            <p>₱ 1,390.00</p>
+          </div>
+          <div class="popup-product-card" data-name="Fraisier" data-price="1350.00" data-image="fraisier.jpg">
+            <img src="fraisier.jpg" alt="Fraisier">
+            <h5>Fraisier</h5>
+            <p>₱1,350.00</p>
+          </div>
+          <div class="popup-product-card" data-name="1 Dozen Fruit Cupcake" data-price="650.00" data-image="cupcake.jpg">
+            <img src="cupcake.jpg" alt="1 Dozen Fruit Cupcake">
+            <h5>1 Dozen Fruit Cupcake</h5>
+            <p>₱ 650.00</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Shopping Cart Table -->
+    <table class="cart-table">
+        <thead>
+          <tr>
+            <th>Product</th>
+            <th>Quantity</th>
+            <th>Price</th>
+            <th></th> 
+          </tr>
+        </thead>
+        <tbody class="cart-items">
+          <tr class="empty-cart-message">
+            <td colspan="4" style="text-align: center; color: #E5C299;">Your cart is empty</td>
+             <!-- Drag Products Here Prompt -->
+    <tr class="drag-products-prompt">
+      <td colspan="4" style="text-align: center; color: #FACC15;">----- DRAG PRODUCTS HERE -----</td>
+    </tr>
+  </tbody>
+</table>
+
+    <!-- Cart Summary -->
+    <div class="cart-summary">
+      <span>TOTAL (<span class="total-items">0</span> item/s): <span class="total-price">₱0.00</span></span>
+      <button class="checkout-btn">CHECK OUT</button>
+    </div>
+  </section>
+
+  <script src="scripts.js"></script>
+</body>
+</html>

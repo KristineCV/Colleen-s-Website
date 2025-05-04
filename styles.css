@@ -1,0 +1,424 @@
+body.main-bg {
+    background-color: #a77757; 
+    color: #E5C299; 
+    font-family: 'Poppins', sans-serif; 
+    margin: 0;
+    padding: 0;
+}
+
+/* Header Section */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #6f4224; 
+    padding: 10px 20px;
+    font-family: 'Playfair Display SC', serif;
+  }
+  
+  .header-left {
+    display: flex;
+    align-items: center;
+  }
+  
+  .logo {
+    width: 40px;
+    height: 40px;
+  }
+  
+  .title {
+    color: #E5C299; 
+    font-size: 2rem;
+    margin-left: 10px;
+  }
+  
+  .header-right {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    font-size: 1.4rem;
+  }
+  
+  .cart-icon {
+    position: relative;
+  }
+  
+  .cart-badge {
+    position: absolute;
+    top: -5px;
+    right: -10px;
+    background-color: #F4B973; 
+    color: black;
+    width: 18px;
+    height: 18px;
+    font-size: 12px;
+    font-weight: bold;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .cart-badge.hidden {
+    display: none;
+  }
+
+ /* Shop Section */
+.shop-section {
+  margin: auto;
+  padding: 0 50px;
+}
+
+.section-title {
+  font-family: 'Playfair Display SC', serif;
+  font-size: 50px;
+  text-align: center;
+  color: #2f1b04;
+  margin-bottom: 15px;
+}
+
+/* Horizontal Line Divider */
+.section-divider {
+  border: none; /* Remove default border */
+  height: 2px;
+  background-color: #E5C299; /* Dark Brown Color for hr */
+  margin: 20px 0; /* Space above and below hr */
+}
+
+/* Product Cards Grid */
+.products {
+  display: flex;
+  gap: 20px;
+  justify-content: space-between; 
+}
+
+/* Product Card Layout */
+.product-card {
+  display: flex; 
+  gap: 20px; 
+  background-color: #6B4226; 
+  padding: 15px;
+  border-radius: 10px; 
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2); 
+  width: 100%; 
+  max-width: 600px; 
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth hover effect */
+}
+
+/* Hover Effect on Card */
+.product-card:hover {
+  transform: scale(1.05); /* Slightly enlarge card */
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3); /* Add stronger shadow */
+}
+
+/* Click Effect */
+.product-card:active {
+  transform: scale(0.98); /* Shrink slightly on click */
+}
+
+/* Image Styling */
+.product-img {
+  flex-shrink: 0;
+  width: 200px; 
+  height: 200px; 
+  object-fit: cover; 
+  border-radius: 5px; 
+  transition: transform 0.3s ease; /* Enable smooth zoom on hover */
+}
+
+.product-card:hover .product-img {
+  transform: scale(1.1); /* Slightly zoom the image on hover */
+}
+
+/* Product Information */
+.product-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center; 
+  flex: 1;
+}
+
+/* Product Name with Hover Transition */
+.product-name {
+  font-family: 'Playfair Display SC', serif;
+  font-size: 1.25rem; 
+  font-weight: bold;
+  color: #E5C299; 
+  margin-bottom: 10px;
+  transition: color 0.3s ease; /* Smooth color change on hover */
+}
+
+.product-card:hover .product-name {
+  color: #ccb095; /* Change to gold on hover */
+}
+
+/* Product Description with Hover Transition */
+.product-desc {
+  font-family: 'Poppins', sans-serif;
+  font-size: 0.9rem; 
+  color: #E5C299; 
+  line-height: 1.5; 
+  margin-bottom: 15px;
+  transition: color 0.3s ease; /* Smooth color change on hover */
+}
+
+.product-card:hover .product-desc {
+  color: #FFFFFF; /* Change to white on hover */
+}
+
+/* Product Price with Hover Transition */
+.product-price {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1rem;
+  font-weight: bold;
+  color: #E5C299;
+  transition: color 0.3s ease; /* Smooth color change on hover */
+}
+
+.product-card:hover .product-price {
+  color: #ccb095; /* Bright yellow price on hover */
+}
+
+/* Shopping Cart Header */
+.section-title {
+    font-family: 'Playfair Display SC', serif;
+    text-align: left;
+    color: #2f1b04; 
+    font-size: 1.5rem;
+    display: flex;
+    align-items: center; 
+    gap: 10px;
+  }
+
+  /* "+" Button */
+.add-cart-btn {
+  font-size: 2rem; /* Make it larger */
+  font-weight: bold; /* Bold to stand out */
+  color: #FACC15; /* Bright Yellow */
+  background-color: transparent; /* Transparent background */
+  border: none; /* Remove border */
+  cursor: pointer; /* Pointer cursor on hover */
+  transition: transform 0.3s ease, color 0.3s ease; /* Smooth interaction effect */
+}
+
+/* Hover Effect for the "+" Button */
+.add-cart-btn:hover {
+  transform: scale(1.2); /* Make slightly larger on hover */
+  color: #FFD700; /* Lighter yellow on hover */
+}
+
+/* Click/Active Effect for the "+" Button */
+.add-cart-btn:active {
+  transform: scale(1); /* Restore size when clicked */
+}
+  
+  .add-cart-btn {
+    font-size: 1.25rem;
+    font-weight: bold;
+    color: #F4B973; 
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .add-cart-btn:hover {
+    color: #ffffff; 
+  }
+
+  .cart-section {
+    margin-top: 20px;
+    padding: 20px; 
+    padding-left: 30px; 
+  }
+
+  
+  /* Cart Table */
+  .cart-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+  }
+  
+  .cart-table th, .cart-table td {
+    padding: 15px;
+    text-align: left;
+    font-size: 1rem;
+  }
+  
+  .cart-table th {
+    background-color: #502A11; 
+    color: #E5C299; 
+  }
+  
+  .cart-table td {
+    background-color: #6B4226;
+    color: #E5C299;
+    vertical-align: middle; 
+  }
+
+  .remove-btn {
+    background: none;
+    border: none;
+    color: #FF5252; 
+    font-size: 1.2rem;
+    cursor: pointer;
+  }
+  
+  .remove-btn:hover {
+    color: #FF0000; 
+    font-weight: bold;
+  }
+
+  /* Cart Item Image */
+.cart-item-details img {
+  width: 78px;
+  height: 78px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-right: 15px; /* Increase margin-right for more space */
+}
+
+/* Cart Item Details */
+.cart-item-details {
+  display: flex; 
+  align-items: center; 
+}
+
+.cart-item-details span {
+  font-family: 'Poppins', sans-serif; 
+  font-size: 1.2rem; 
+  color: #E5C299; 
+  font-weight: regular; 
+}
+  
+
+/* Cart Summary Container */
+.cart-summary {
+  display: flex; /* Use flexbox layout */
+  justify-content: flex-end; /* Align items to the right */
+  align-items: center; /* Vertically center text and button */
+  gap: 15px; /* Space between the total and the button */
+  position: fixed; /* Fix position to the bottom-right */
+  bottom: 20px; /* Distance from the bottom */
+  right: 20px; /* Distance from the right */
+  background-color: #502A11; /* Background for better visibility */
+  padding: 10px 20px; /* Add space inside the container */
+  border-radius: 8px; /* Smooth round corners */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Subtle shadow for elevation */
+  z-index: 100; /* Ensure it appears above other content */
+}
+
+/* Total Text Styling */
+.cart-info .total-label {
+  font-size: 1rem; /* Adjust font size */
+  color: #E5C299; /* Beige text color */
+  font-family: 'Poppins', sans-serif; /* Font family */
+  font-weight: bold;
+}
+
+/* Checkout Button Styling */
+.checkout-btn {
+  background-color: #FACC15; /* Bright yellow background */
+  color: black; /* Text color */
+  border: none;
+  border-radius: 5px; /* Rounded edges */
+  padding: 10px 20px;
+  font-size: 1rem; /* Font size */
+  font-weight: bold; /* Bold text */
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease; /* Interaction effects */
+}
+
+/* Hover and Click Effects for Button */
+.checkout-btn:hover {
+  background-color: #FFD700; /* Lighter yellow on hover */
+  transform: scale(1.05); /* Slightly enlarge on hover */
+}
+
+.checkout-btn:active {
+  transform: scale(0.95); /* Shrink slightly on click */
+}
+
+
+  /* Popup Modal Styles */
+.popup-modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+  }
+  
+  .popup-modal.hidden {
+    display: none;
+  }
+  
+  .popup-content {
+    background-color: #6B4226;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    width: 80%;
+    max-width: 600px;
+    position: relative;
+  }
+  
+  .popup-products {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+  }
+  
+  .popup-product-card {
+    background-color: #502A11; 
+    padding: 10px;
+    border-radius: 10px;
+    text-align: center;
+    cursor: pointer;
+  }
+  
+  .popup-product-card img {
+    width: 107px;
+    height: 107px;
+    object-fit: cover;
+    border-radius: 8px;
+  }
+  
+  .popup-product-card h5 {
+    margin-top: 10px;
+    font-family: 'Playfair Display SC', serif;
+    font-size: 1.2rem;
+    color: #E5C299;
+  }
+  
+  .popup-product-card p {
+    margin-top: 5px;
+    font-size: 1rem;
+    font-weight: bold;
+    color: #F4B973; 
+  }
+  
+  .close-popup-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    color: #FFF;
+    cursor: pointer;
+  }
+  
+  .close-popup-btn:hover {
+    color: #F4B973;
+  }
+
+  .hidden {
+  display: none !important;
+}

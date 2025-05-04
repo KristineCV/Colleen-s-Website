@@ -1,0 +1,310 @@
+
+body {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #4b382a;
+  color: #e8cfae;
+  box-sizing: border-box; 
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; 
+}
+
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+
+/* Header Section */
+header {
+  background-color: #5e3e2a;
+  width: 100%; /* Cover full width */
+}
+
+.header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%; /* Full width of the frame */
+  padding: 20px 50px; /* Adjust vertical padding */
+}
+
+
+.logo img {
+  height: 100px;
+  width: auto;
+}
+
+
+/* Navigation */
+nav ul {
+  display: flex;
+  list-style: none;
+  gap: 70px;
+  margin: 0;
+  padding: 0;
+}
+
+
+nav ul li a {
+  font-family: 'Roboto', sans-serif;
+  font-size: 24px;
+  font-weight: 500; 
+  letter-spacing: 0px;
+  margin: 10px 0;
+  color: #E0C4A3;
+  text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.5); /* Soft shadow effect */
+  position: relative; /* Required for the underline effect */
+  transition: transform 0.3s ease, color 0.3s ease, text-shadow 0.3s ease; 
+}
+
+
+/* Hover Effect */
+nav ul li a:hover {
+  color: #FFD7A3; 
+  text-shadow: 0px 4px 6px rgba(0, 0, 0, 0.7); 
+  transform: translateY(-5px) scale(1.1); 
+}
+
+
+/* Underline Effect */
+nav ul li a::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -5px; /* Position underline slightly below the text */
+  width: 0; /*underline invisible */
+  height: 2px; 
+  background-color: #FFD7A3; 
+  transition: width 0.3s ease; /* Animate underline's width */
+}
+
+
+nav ul li a:hover::after {
+  width: 100%; /* On hover, make the underline full width */
+}
+
+
+/* Social Media Row and Buttons */
+.action-columns {
+  display: flex;
+  flex-direction: column; 
+  align-items: flex-end; 
+  gap: 15px; 
+}
+
+
+.social-row {
+  display: flex;
+  gap: 10px; /* Space between icons and usernames */
+  align-items: center;
+}
+
+
+.social-row img {
+  width: 20px;
+  height: 20px; /* Consistent icon size */
+}
+
+
+.social-row span {
+  font-size: 14px;
+  color: white;
+}
+
+
+/* Buttons */
+.buttons {
+  display: flex;
+  gap: 10px;
+}
+
+
+.buttons button {
+  background-color: #905F3F;
+  color: #E0C4A3;
+  border: none;
+  border-radius: 30px;
+  font-size: 16px;
+  padding: 12px 30px;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: all 0.3s ease; /* Smooth transition for hover effect */
+}
+
+
+.buttons button:hover {
+  background-color: #E0C4A3; /* Lighter color on hover */
+  color: #5e3e2a; 
+  transform: scale(1.1); /* Slight scaling effect */
+}
+
+
+/* BANNER */
+.banner {
+  display: flex; 
+  justify-content: space-between; 
+  align-items: center; 
+  background-image: url('gradient-banner.jpg'); 
+  background-size: cover;
+  background-position: center; 
+  width: 100%; 
+  height: 250px; 
+  overflow: hidden; 
+   
+}
+
+.left-content {
+  flex: 1; 
+  display: flex; 
+  flex-direction: column; 
+  justify-content: center; 
+  align-items: flex-start; 
+  text-align: left;
+}
+
+.left-content h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: 80px;
+  margin: 10px 30px;
+  font-weight: bold;
+  font-style: italic;
+  color: #E8CFAE;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Add shadow for contrast */
+}
+
+.left-content h3 {
+  font-family: 'Roboto', sans-serif;
+  font-size: 20px;
+  font-weight: 300; /* Lightweight font for subtitle */
+  margin: 10px 130px; 
+  letter-spacing: 2px; /* Add spacing between letters */
+  color: #E8CFAE;
+}
+
+.order-btn {
+  background-color: #5e3e2a;
+  color: #E0C4A3;
+  border: none;
+  border-radius: 30px;
+  font-size: 18px;
+  padding: 12px 30px;
+  margin-top: 20px; 
+  margin: 10px 160px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out; /* Smooth transition for hover effect */
+}
+
+.order-btn:hover {
+  background-color: #E0C4A3;
+  color: #5e3e2a;
+  transform: scale(1.1); 
+}
+
+.right-images {
+  flex: 1; 
+  display: flex; 
+  justify-content: flex-end; 
+  align-items: center; 
+}
+
+.right-images img {
+  height: 100%; 
+  max-width: 400%;
+  object-fit: contain; 
+}
+
+
+/* TAGLINE */
+.tagline {
+  text-align: center;
+  padding: 20px 0;
+  position: relative;
+}
+
+
+.tagline h2 {
+  font-family: 'Sedan SC', serif; 
+  font-weight: 400; 
+  font-size: 32px; 
+  letter-spacing: 0.15em; 
+  line-height: auto; 
+  margin: 0; 
+  color: #e8cfae;
+  position: relative; 
+  display: inline-block;
+}
+
+
+.tagline h2::before,
+.tagline h2::after {
+  content: ''; 
+  position: absolute;
+  top: 50%; 
+  width: calc(50vw - 150px); 
+  height: 1px; 
+  background-color: #e8cfae; 
+}
+
+
+.tagline h2::before {
+  left: 0; 
+  transform: translateX(-100%); 
+}
+
+
+.tagline h2::after {
+  right: 0; 
+  transform: translateX(100%);
+}
+
+
+/* CATEGORIES */
+.categories {
+  display: flex;
+  justify-content: space-evenly;
+  color: #E0C4A3;
+  padding: 40px 20px;
+}
+
+
+.category-item {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  transition: all 0.3s ease; 
+}
+
+.category-item:hover {
+  transform: scale(1.1); 
+}
+
+
+.category-item img {
+  width: 300px;
+  height: 300px;
+  object-fit: contain;
+  transition: transform 0.3s ease; 
+}
+
+
+.category-item img:hover {
+  transform: scale(1.2); 
+}
+
+
+.category-item p {
+  font-family: 'Roboto', sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  letter-spacing: 1px;
+  text-shadow: 0px 4px 5px rgba(0, 0, 0, 0.5);
+}
